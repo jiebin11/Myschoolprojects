@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Bicycle Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        img.logo {
+            width: 100px;
+            height: auto;
+        }
+        .bike-img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .bike-info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Inventory</h1>
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+    <h2>Available Bikes</h2>
+    <form action="thankyou.html" method="POST">
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required><br>
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required><br>
+
+        <div>
+            <img src="bike1.jpg" alt="Mountain Bike" class="bike-img">
+            <input type="checkbox" id="bike1" name="bike" value="Mountain Bike">
+            <label for="bike1">Mountain Bike - Brand: Trek, Price: $500, Gears: 21, Wheel Size: 29 inches</label>
+       </div>
+        <div>
+            <img src="bike2.jpg" alt="Road Bike" class="bike-img">
+            <input type="checkbox" id="bike2" name="bike" value="Road Bike">
+            <label for="bike2">Road Bike - Brand: Giant, Price: $600, Gears: 18, Wheel Size: 28 inches</label>
+        </div>
+        <div>
+            <img src="bike3.jpg" alt="Hybrid Bike" class="bike-img">
+            <input type="checkbox" id="bike3" name="bike" value="Hybrid Bike">
+            <label for="bike3">Hybrid Bike - Brand: Specialized, Price: $550, Gears: 24, Wheel Size: 27 inches</label>
+        </div>
+        <div>
+            <img src="bike4.jpg" alt="Electric Bike" class="bike-img">
+            <input type="checkbox" id="bike4" name="bike" value="Electric Bike">
+            <label for="bike4">Electric Bike - Brand: Cannondale, Price: $1200, Gears: 10, Wheel Size: 26 inches</label>
+        </div>
+        <h3>Payment Information</h3>
+        <label for="payment-type">Choose Payment Type:</label><br>
+        <input type="radio" id="visa" name="payment" value="Visa" required>
+        <label for="visa">Visa</label><br>
+        <input type="radio" id="discover" name="payment" value="Discover">
+        <label for="discover">Discover</label><br>
+        <input type="radio" id="mastercard" name="payment" value="MasterCard">
+        <label for="mastercard">MasterCard</label><br>
+        <label for="credit-card">Credit Card Number:</label><br>
+        <input type="number" id="card" name="card" placeholder="Enter your card number" required><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</main>
+
+</body>
+</html>
